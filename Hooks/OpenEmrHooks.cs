@@ -16,7 +16,11 @@ namespace OpenEmrApplication.Hooks
         [AfterScenario]
         public void TearDown()
         {
-           // OpenEmrHooks.driver.Quit();
+            if(OpenEmrHooks.driver!=null)
+            {
+                OpenEmrHooks.driver.Quit();
+            }
+                
         }
 
         public static ExtentReports extent;

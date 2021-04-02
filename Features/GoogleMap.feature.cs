@@ -127,9 +127,11 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Conntecting cites2")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
         public virtual void ConntectingCites2()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Conntecting cites2", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 17

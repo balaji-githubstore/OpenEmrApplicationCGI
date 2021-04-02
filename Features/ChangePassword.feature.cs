@@ -79,9 +79,11 @@ namespace OpenEmrApplication.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Validate Change Password")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
         public virtual void ValidateChangePassword()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Change Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8

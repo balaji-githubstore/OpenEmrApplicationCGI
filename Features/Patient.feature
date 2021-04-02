@@ -3,7 +3,7 @@ Feature: Patient
 	In order to add/edit/delete the patient record
 	As a portal admin
 	I want to access the dashboard and add/edit/delete record
-
+	@ignore
 Scenario Outline: Add Patient Record
 	Given I have browser with openemr url
 	When I enter username as 'admin1'
@@ -26,7 +26,8 @@ Scenario Outline: Add Patient Record
 		| firstname | lastname | dob        | gender | marital_status   | expectedvalue                        |
 		| bala      | dina     | 2021-04-01 | Male   | Domestic Partner | Medical Record Dashboard - Bala Dina |
 		| john      | cena     | 2021-03-01 | Male   | Domestic Partner | Medical Record Dashboard - John Cena |
-
+	
+	@ignore
 Scenario: ExcelConnect
 	Given I have browser with google map url
 	When I fill the detail from excel 'D:\Report\OpenEMRData.xlsx' with sheetname 'Invalid Credential'
